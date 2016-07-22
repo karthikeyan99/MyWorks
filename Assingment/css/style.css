@@ -1,0 +1,97 @@
+body{
+	
+	
+}
+header{
+	
+	background:brown;
+	
+	position: fixed;
+}
+.main {
+	padding-top:45px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	font-size: 15;
+		}
+	aside{
+		margin-bottom: 50px;
+	}
+	.wrap{
+
+			background-color: yellow;
+	}
+
+aside li{
+	background: orange;
+	display: inline;
+}
+
+
+nav li {
+		display:inline;
+    
+}
+.primary{
+	background: red;
+}
+ul a{
+	color:yellow;
+	text-decoration: none;
+}
+
+li a:hover {
+text-decoration:underline;
+color: black;
+
+}
+.main hover{
+	text-decoration:underline;
+color: black;
+}	
+a{
+	color:black;
+}
+aside img{
+	width: 200px;
+	height: 200px;
+	padding:0 0 0 60px;
+}
+h3{
+	text-align: center;
+}
+article img{
+	padding: 90px 90px 200px 250px;
+}
+.item a
+{
+text-decoration: none;
+display: inline;
+font-size: 20;
+font-family: 'PT Sans', sans-serif;
+}
+.item h3 {
+	padding-top:70px;
+}
+.thirdset img{
+
+	padding:100px 50px 100px 50px;
+
+}
+.old1 img{
+	width: 50px;
+	height: 40px;
+}
+.main {
+
+	margin-top: 30px;
+}
+.new {
+font-family: 'Lobster', cursive;
+}
+.new2{
+	font-family: 'Lobster', cursive;
+}
+.item h3{
+	font-family: 'Abril Fatface', cursive;
+}
