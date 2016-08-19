@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AIRTEL</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>        
+    <nav class="navbar navbar">
+        <div class="container">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/airtel.png"></a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="http://localhost:8080/">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Airtel Form<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.airtel.in/forme/home/needhelp">Postpaid</a></li>
+                <li><a href="http://www.airtel.in/forme/home/needhelp">Prepaid</a></li>
+                <li><a href="http://www.airtel.in/forme/home/needhelp">Customer Care</a></li>
+            </ul>
+        </li>
+        <li><a href="http://www.airtel.in/personal/mobile/prepaid/easy-recharge-enter-number">Recharge</a></li>
+        <li><a href="https://www.airtel.in/opennetwork/?icid=home_open_network_header_4	">Open Network</a></li>
+                    <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Search By<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li id="statusfront2"><a >PhoneNumber</a></li>
+                 <form class="navbar-form pull-right">
+        <input type="text" name="name" class="form-control" placeholder="PhoneNo" id="phones">
+        
+    </form> 
+                <li id="statusfront1">AccountType
+                
+                                    <button class="form-control btn-default" id="option1"><strong>Postpaid</strong></button>
+                                    <button class="form-control btn-default" id="option2"><strong>Prepaid</strong></button>
+                               
+                </li>
+
+                <li id="statusfront">Status</a>
+                		<button class="btn" id="opt1"><strong> Active</strong></button>
+                        <button class="btn" id="opt2"><strong>Deactive</strong></button>
+
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+     <li class="dropdown">
+        <li><a class="dropdown-toggle" data-toggle="dropdown"  href="#"><span class="glyphicon glyphicon-user"></span>  Admin</a>
+        <ul class="dropdown-menu">
+                <li><a href="#">User</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-cog"></span>  Edit</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"></span>  LogOut</a></li>
+            </ul>
+            </li>
+            
+    </ul>
+</li>
+    <form class="navbar-form pull-right">
+        <input type="text" name="name" class="form-control" placeholder="Customer Name" id="search">
+        <button type="button" class="btn btn-default" value="submit" id="mybutton"><span class="glyphicon glyphicon-search"></span></button>
+    </form> 
+</div>
+</div>
+</div>
+</nav>
+
+<div class="col-sm-6" id="buttons">
+    
+            <button type="button" class="btn btn-warning" id="viewAll">
+                <span class="glyphicon glyphicon-menu-hamburger"></span> CustomerFull Deatils
+            </button>
+        </div>
+
+<div class="col-sm-3" id="butt">
+    
+            <!-- <button type="button" class="btn btn-warning" id="sort">Sort</button> -->
+                
+                   
+     
+ 
+        <button class="dropdown-toggle btn btn-default dropdown" data-toggle="dropdown" id="gs"><span class="glyphicon glyphicon-sort"></span>Sort</button>
+       
+            </li>
+            
+    </ul>
+
+
+</div>
+<!--         <hr>
+        <hr> -->
+        <div class="col-sm-12" id="buttons">
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#register">
+                <span class="glyphicon glyphicon-plus-sign"></span> Adding New Customer
+            </button>
+            <hr>
+
+           <div class="modal fade" role="dialog" id="register">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Add Customer</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" id="forming">
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="Name">Customer Name
+                            </label>
+                            <div class="col-sm-9">
+                             <input class="form-control" type="name" value="" placeholder="Customername" id="name" required>
+  
+                            </div>                                              
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="phoneNo">Phone No
+                            </label>
+                            <div class="col-sm-9">
+                            
+                                <input class="form-control" type="tel" pattern="^\d{10}$" name="phoneNo" id="phoneNo" placeholder="Phone No" required >
+                            </div>                                              
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="gender">Gender
+                            </label>
+                            <div class="col-sm-9">
+                                <select class="form-control" id="gender">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>                                              
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="accountType">AccountType
+                            </label>
+                            <div class="col-sm-9">
+
+                                <select class="form-control" id="accountType">
+                                    <option>Postpaid</option>
+                                    <option>Prepaid</option>
+                                </select>
+                            </div>                                              
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="Balance">Balance
+                            </label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="text" name="balance" id="balance" placeholder="Balance" required/>
+                            </div>                                              
+                        </div>
+
+                        	 <div class="form-group">
+                            <label class="col-sm-3 control-label" for="isActive">ActiveStatus
+                            </label>
+                             <div class="col-sm-9">
+                                <select class="form-control" id="status">
+                                    <option>Activated</option>
+                                    <option>Deactivated</option>
+                                </select>
+                            </div>    
+                                                                         
+                        </div>
+
+
+   				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <input type="submit" value="Add" class="btn btn-default"  id="forming" />
+
+                    </form>
+
+
+                </div>
+            
+            <div class="modal-footer">
+                
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
+</div>
+
+
+<div class="row" id="information">
+    <div class="col_12">
+        <div class="container response" id="response">
+        
+                    <table class="table table-bordered">
+
+                <thead id="heading">
+                    <tr>
+                        <th>ID</th>
+                        <th>Phone Number</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Account Type</th>
+                        <th>Balance</th>
+                        <th>Active</th>
+                        <th>Operation</th>
+                    </tr>
+                </thead>
+
+                <tbody id="table">
+                    <template id="temp">
+                        <tr data-id="{{id}}" id="row">
+                            <td>{{id}}</td>
+                            <td>
+                                <span class="noedit pno">{{phone_no}}</span>
+                                <input type="text" name="pno" class="form-control edit pno" required />
+                            </td>
+                            <td>
+                                <span class="noedit name">{{name}}</span>
+                                <input type="text" name="name" class="form-control edit name" required />
+                            </td>
+                            <td>
+                                <span class="noedit gender">{{gender}}</span>
+                                <!-- <input type="text" name="gender" class="edit gender"> -->
+                                <select class="form-control edit gender" name="gender" id="gendd">
+                                    <option>male</option>
+                                    <option>female</option>
+                                </select>
+                            </td>
+                            <td>
+                                <span class="noedit account_type">{{account_type}}</span>
+                                <!-- <input type="text" name="account_type" class="edit account_type"> -->
+                                <select class="form-control edit account_type" name="account_type">
+                                    <option>Prepaid</option>
+                                    <option>Postpaid</option>
+                                </select>
+                            </td>
+                            
+                            <td>
+                                <span class="noedit balance">{{balance}}</span>
+                                <input type="text" name="balance" class="form-control edit balance" >
+
+                            </td>
+                            <td>
+                                <span class="noedit isActive">{{isActive}}</span>
+                               <!--  <input type="text" name="isActive" class="form-control edit isActive"> -->
+                                	<select class="form-control edit isActive" name="isActive">
+                                    <option>Activated</option>
+                                    <option>Deactivated</option>
+                                </select>
+                            </td>
+                            <td>
+
+                            		<button type="button" class="btn btn-group btn-danger remove" data-toggle="modal" data-target="#delet" >Delete
+                <span class="glyphicon glyphicon-trash"></span> 
+            </button>
+
+<div class="modal fade" role="dialog" id="delet">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Admin Password</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="Name">Password
+                            </label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="text" name="Name" id="dele" placeholder="Password">
+                            </div>                                              
+                        </div>
+
+                        
+
+
+                    </form>
+
+
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="delete" data-id="{{id}}" data-dismiss="modal">OK</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
+</div>
+                            <!-- <button class="btn btn-group btn-danger remove" type="button"  id="delete" data-id="{{id}}"> 
+                               
+                               <span class="glyphicon glyphicon-trash"></span>
+                             </button>
+                             --> 
+
+                            <button class="btn btn-group btn-primary noedit" type="button" id="update" data-id="{{id}}" data-toggle="modal" data-target="#mUpdate"> Update
+                                <span class="glyphicon glyphicon-wrench"></span> 
+                            </button>
+                            <!-- <button type="button" class="editCustomer noedit">Edit</button> -->
+                            <button type="button" class="btn btn-group btn-primary saveCustomer edit" id="save">
+                               Save    <span class="glyphicon glyphicon-send"></span>
+                            </button>
+                            <button type="button" class="btn btn-group btn-default cancelCustomer edit">
+                                Remove  <span class="glyphicon glyphicon-ban-circle"></span>
+                            </button>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+        </table>
+    </div>
+</div>
+</div>
+<div>
+	
+  
+ 
+  
+  
+
+</div>
+
+<div class="container" id="allpage">
+    <button class="btn btn-default pull-left" id="previous">
+        <span class="glyphicon glyphicon-menu-left"></span>
+    </button>
+    <button class="btn" id="next">
+        <span class="glyphicon glyphicon-menu-right"> </span>
+    </button>
+    <button class="btn" id="next1">
+        <span class="glyphicon glyphicon-menu-right"> </span>
+    </button>
+    
+</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/mustche.js"></script>
+<script type="text/javascript" src="js/gs_sortable.js"></script>
+
+
+</body>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+</html>

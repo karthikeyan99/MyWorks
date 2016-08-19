@@ -1,0 +1,50 @@
+#buttons{
+	text-align: left;
+}
+body{
+	background-color:#fff
+;
+}
+#information{
+	padding-top: 50px;
+}
+tr td .edit{
+	display:none;
+}
+tr td.edit .edit{
+	display:initial;
+}
+#table-responsive{
+	width: 	1500px;
+}
+tr td.edit .noedit{
+	display:none;
+}
+#heading{
+	background-color:;
+}
+#row{
+	padding: 30px;
+}
+body{
+	background-color: #ff5c33;
+}
+#statusfront{
+
+    background-color: #f44336; 
+}
+#statusfront1{
+
+    background-color: #f44336;
+}
+#statusfront2{
+
+    background-color: #f44336;
+}
+/* Sortable tables */
+ #gs{
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}
